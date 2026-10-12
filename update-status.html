@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser Compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Title -->
+    <title>Update Order Status | Felicia Bakes Admin</title>
+
+    <!-- Do not index -->
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <meta name="author" content="Ntombi Moekwa">
+
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/png"
+          href="images/felicia-bakes-logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&family=Istok+Web:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+
+</head>
+
+<body>
+  <main class="form-page">
+    <section class="form-intro">
+      <h2>Update Order Status</h2>
+    </section>
+
+    <section class="form-section">
+      <div class="form-group">
+        <label>Order Number</label>
+        <input type="text" id="orderNumber" placeholder="FB001">
+      </div>
+
+      <div class="form-group">
+        <label>Status</label>
+        <select id="status">
+          <option>Quote Requested</option>
+          <option>Deposit Paid</option>
+          <option>Design Confirmed</option>
+          <option>Baking</option>
+          <option>Decorating</option>
+          <option>Ready for Collection</option>
+          <option>Collected</option>
+        </select>
+      </div>
+
+      <button id="updateBtn" class="submit-btn">Update</button>
+
+      <p id="result"></p>
+    </section>
+  </main>
+
+  <script src="scripts/update-status.js"></script>
+</body>
+</html>

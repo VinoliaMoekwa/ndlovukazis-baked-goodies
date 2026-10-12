@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Felicia Bakes Email Signature</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            background: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .signature {
+            width: 600px;
+            max-width: 100%;
+            display: flex;
+            border-radius: 14px;
+            overflow: hidden;
+            background: #fff0f5;
+            color: #4b3552;
+        }
+
+        /* LEFT BRAND PANEL */
+        .signature-brand {
+            width: 160px;
+            min-height: 220px;
+            background: #df73a5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px 10px;
+            box-sizing: border-box;
+        }
+
+        .signature-brand img {
+            width: 90px;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .tagline-side {
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        /* RIGHT INFORMATION PANEL */
+        .signature-info {
+            flex: 1;
+            padding: 18px 20px;
+            box-sizing: border-box;
+        }
+
+        .signature-name {
+            margin: 0 0 3px 0;
+            font-size: 22px;
+            font-weight: bold;
+            color: #e21b68;
+        }
+
+        .signature-title {
+            margin: 0 0 7px 0;
+            font-size: 13px;
+            color: #6b5572;
+        }
+
+        .signature-tagline {
+            margin: 0 0 14px 0;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            color: #a987c9;
+        }
+
+        .contact-row {
+            margin-bottom: 8px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .contact-row i {
+            width: 17px;
+            margin-right: 5px;
+            color: #e21b68;
+        }
+
+        .contact-row a {
+            color: #4b3552;
+            text-decoration: none;
+        }
+
+        /* SOCIAL ICONS */
+        .social-icons {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .social-icons a {
+            color: #e21b68;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .social-icons a:hover {
+            color: #a987c9;
+        }
+
+        /* BOTTOM BRAND LINE */
+        .signature-footer {
+            width: 600px;
+            max-width: 100%;
+            text-align: right;
+            padding-top: 7px;
+            font-size: 9px;
+            letter-spacing: 1.2px;
+            color: #a987c9;
+        }
+
+        .signature-brand {
+    width: 160px;
+    min-height: 220px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.tagline-side {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #e21b68;
+    text-transform: uppercase;
+}
+
+        @media (max-width: 600px) {
+            .signature {
+                flex-direction: column;
+            }
+
+            .signature-brand {
+                width: 100%;
+                min-height: 130px;
+            }
+
+            .signature-brand img {
+                width: 70px;
+                margin-bottom: 10px;
+            }
+
+            .signature-info {
+                width: 100%;
+            }
+
+            .signature-footer {
+                width: 100%;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="signature">
+
+        <!-- LEFT BRANDING -->
+        <div class="signature-brand">
+
+            <img
+                src="https://feliciabakes.co.za/images/felicia-bakes-logo.png"
+                alt="Felicia Bakes"
+            >
+
+            <div class="tagline-side">
+                Everything<br>
+                Sweet &amp; Pretty
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT INFORMATION -->
+        <div class="signature-info">
+
+            <div class="signature-name">
+                Felicia Bakes
+            </div>
+
+            <div class="signature-title">
+                Baker &amp; Founder
+            </div>
+
+            <div class="signature-tagline">
+                EVERYTHING SWEET &amp; PRETTY
+            </div>
+
+
+            <!-- PHONE -->
+            <div class="contact-row">
+                <i class="fa-solid fa-phone"></i>
+
+                <a href="tel:+27813315267">
+                    +27 81 331 5267
+                </a>
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="contact-row">
+                <i class="fa-solid fa-envelope"></i>
+
+                <a href="mailto:info@feliciabakes.co.za">
+                    info@feliciabakes.co.za
+                </a>
+            </div>
+
+
+            <!-- WEBSITE -->
+            <div class="contact-row">
+                <i class="fa-solid fa-globe"></i>
+
+                <a href="https://feliciabakes.co.za" target="_blank">
+                    www.feliciabakes.co.za
+                </a>
+            </div>
+
+
+            <!-- SOCIAL MEDIA -->
+            <div class="social-icons">
+
+                <!-- Instagram -->
+                <a
+                    href="https://www.instagram.com/felicia__bakes/"
+                    target="_blank"
+                    aria-label="Instagram"
+                >
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+
+                <!-- TikTok -->
+                <a
+                    href="https://www.tiktok.com/@felicia.bakes"
+                    target="_blank"
+                    aria-label="TikTok"
+                >
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+
+                <!-- WhatsApp -->
+                <a
+                    href="https://wa.me/27813315267"
+                    target="_blank"
+                    aria-label="WhatsApp"
+                >
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+
+                <!-- Email -->
+                <a
+                    href="mailto:info@feliciabakes.co.za"
+                    aria-label="Email"
+                >
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="signature-footer">
+        FELICIA BAKES &nbsp;•&nbsp; EVERYTHING SWEET &amp; PRETTY
+    </div>
+
+</body>
+</html>

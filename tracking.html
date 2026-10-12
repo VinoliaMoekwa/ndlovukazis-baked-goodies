@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser Compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Page Title -->
+    <title>Track Your Order | Felicia Bakes</title>
+
+    <!-- SEO -->
+    <meta name="description"
+          content="Track your custom cake order from Felicia Bakes. Stay updated on your order's progress from confirmation through collection ">
+
+    <meta name="keywords"
+          content="track cake order, Felicia Bakes order tracking, custom cake order status, Pretoria bakery">
+
+    <meta name="author" content="Ntombi Moekwa">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://feliciabakes.co.za/track-order.html">
+
+    <!-- Theme Colour -->
+    <meta name="theme-color" content="#ffc7d7">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:title"
+          content="Track Your Order | Felicia Bakes">
+
+    <meta property="og:description"
+          content="Check the latest progress of your custom cake order from Felicia Bakes.">
+
+    <meta property="og:url"
+          content="https://feliciabakes.co.za/track-order.html">
+
+    <meta property="og:image"
+          content="https://feliciabakes.co.za/images/felicia-bakes-logo.png">
+
+    <meta property="og:image:alt"
+          content="Felicia Bakes Logo">
+
+    <meta property="og:site_name"
+          content="Felicia Bakes">
+
+    <meta property="og:locale"
+          content="en_ZA">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Track Your Order | Felicia Bakes">
+
+    <meta name="twitter:description"
+          content="Track the progress of your Felicia Bakes order.">
+
+    <meta name="twitter:image"
+          content="https://feliciabakes.co.za/images/felicia-bakes-logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/png"
+          href="images/felicia-bakes-logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&family=Istok+Web:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+
+  <style>.current-status-card[hidden], .order-journey[hidden] { display: none; }</style>
+</head>
+
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="logo">
+        <img src="images/felicia-bakes-logo.png" alt="Felicia Bakes custom cakes and cupcakes logo">
+      </div>
+
+      <nav class="navigation" id="mobileNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="request-quote.html" class="nav-link">Request Quote</a>
+      <a href="tracking.html" class="nav-link">Track Order</a>
+
+
+      </nav>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/felicia__bakes/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@felicia.bakes" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/27813315267" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@feliciabakes.co.za">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+      </div>
+    </div>
+
+    <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="form-page">
+    <section class="form-intro">
+      <h2>Track Your Order</h2>
+      <p>Enter your order number to see the latest status.</p>
+    </section>
+
+    <section class="form-section">
+      <div class="form-group">
+        <input
+          type="text"
+          id="orderNumber"
+          placeholder="Enter Order Number (e.g. FB001)"
+        >
+      </div>
+
+      <button id="trackBtn" type="button" class="submit-btn">
+        Track Order
+      </button>
+
+      <!-- IMPORTANT: use div instead of p -->
+      <div id="result" role="status" aria-live="polite"></div>
+    </section>
+
+    <!-- Cake Journey Timeline -->
+<section class="order-journey" id="orderJourney" hidden>
+
+    <h3>Your Cake Journey</h3>
+
+    <div class="journey-timeline">
+
+        <div class="timeline-step" data-status="Quote Requested">
+            <div class="step-circle">📝</div>
+            <p>Quote Requested</p>
+        </div>
+
+        <div class="timeline-step" data-status="Deposit Paid">
+            <div class="step-circle">💳</div>
+            <p>Deposit Paid</p>
+        </div>
+
+        <div class="timeline-step" data-status="Design Confirmed">
+            <div class="step-circle">✏️</div>
+            <p>Design Confirmed</p>
+        </div>
+
+        <div class="timeline-step" data-status="Baking">
+            <div class="step-circle">🎂</div>
+            <p>Baking</p>
+        </div>
+
+        <div class="timeline-step" data-status="Decorating">
+            <div class="step-circle">🧁</div>
+            <p>Decorating</p>
+        </div>
+
+        <div class="timeline-step" data-status="Ready for Collection">
+            <div class="step-circle">🎁</div>
+            <p>Ready for Collection</p>
+        </div>
+
+        <div class="timeline-step" data-status="Collected">
+            <div class="step-circle">🛍️</div>
+            <p>Collected</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Current Status Card -->
+<section class="current-status-card" id="currentStatus" hidden>
+
+    <div class="status-icon" id="statusIcon">
+        🎂
+    </div>
+
+    <div class="status-content">
+
+        <span class="status-label">
+            CURRENT STATUS
+        </span>
+
+        <h3 id="statusTitle"></h3>
+
+        <p id="statusDescription"></p>
+
+        <div class="status-message" id="statusMessage"></div>
+
+    </div>
+
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__logo">
+<!-- Logo image would go here -->
+<img src="images/felicia-bakes-logo.png" alt="Felicia Bakes custom cakes and cupcakes logo">
+</div>
+<!-- Icons -->
+ <div class="footer-icons">
+  <a href="https://www.instagram.com/felicia__bakes/" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.tiktok.com/@felicia.bakes" target="_blank">
+    <i class="fab fa-tiktok"></i>
+  </a>
+
+  <a href="https://wa.me/27813315267" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="mailto:info@feliciabakes.co.za">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+</div>
+<p>&copy; 2024 Felicia Bakes. All rights reserved.</p>
+
+</footer>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/tracking.js"></script>
+
+</body>
+</html>
