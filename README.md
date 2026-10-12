@@ -1,1 +1,1 @@
-I am creating a baking account for a company called Felicia Bakes
+A baking company for a homebased business in Thembisa 
