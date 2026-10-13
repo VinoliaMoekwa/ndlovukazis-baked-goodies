@@ -9,7 +9,7 @@ const statusDetails = {
   "Quote Requested": {
     icon: "📝",
     description: "We have received your quote request and will be in touch soon.",
-    message: "Thank you for choosing Felicia Bakes."
+    message: "Thank you for choosing Ndlovukazi's Baked Goodies."
   },
   "Deposit Paid": {
     icon: "💳",
@@ -39,7 +39,7 @@ const statusDetails = {
   Collected: {
     icon: "🛍️",
     description: "Your order has been collected. We hope it made your celebration extra special.",
-    message: "Thank you for supporting Felicia Bakes."
+    message: "Thank you for supporting Ndlovukazi's Baked Goodies."
   }
 };
 

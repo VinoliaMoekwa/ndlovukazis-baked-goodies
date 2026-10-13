@@ -18,12 +18,12 @@
     .header-top{
         grid-template-columns:auto 1fr auto;
         gap:16px;
-        min-height:90px;
+        min-height:76px;
         padding:0 24px;
     }
 
     .logo img{
-        width:90px;
+        width:140px;
         height:auto;
     }
 
@@ -199,7 +199,7 @@
     }
 
     .footer__logo img{
-        width:120px;
+        width:190px;
     }
 
     .footer-icons i{

@@ -29,8 +29,8 @@ main {
   min-width: 0;
 }
 body {
-  font-family: 'Istok Web', sans-serif;
-  background-color: #ffc7d7;
+  font-family: 'DM Sans', Arial, sans-serif;
+  background-color: #ffffff;
   overflow-x: hidden;
 }
 
@@ -72,7 +72,7 @@ img {
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 20px;
-  min-height: 110px;
+  min-height: 80px;
   padding: 0 40px;
 }
 
@@ -83,7 +83,7 @@ img {
 }
 
 .logo img {
-  width: 110px;
+  width: 150px;
   height: auto;
   display: block;
   object-fit: contain;
@@ -107,7 +107,7 @@ img {
 }
 
 .nav-link {
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'DM Sans', Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: white;
@@ -163,9 +163,7 @@ img {
   position: relative;
   overflow: hidden;
 
-  background:
-    linear-gradient(rgba(255,245,248,0.40), rgba(255,245,248,0.40)),
-    url("../images/unicorn-birthday-bento-cake-and-cupcakes.jpg");
+  background-color: #fff5f8;
 
   background-size: cover;
   background-position: center;
@@ -175,18 +173,30 @@ img {
     0 4px 4px -1px rgba(12,12,13,.10),
     0 4px 4px -1px rgba(12,12,13,.05);
 }
+/* Video fills the existing hero without changing its layout. */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
 /* Soft overlay */
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 245, 248, 0.65);
+  background: rgba(232, 151, 179, 0.45);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   display: flex;
   flex-direction: column;
@@ -195,7 +205,7 @@ img {
 }
 
 .brand-name {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 36px;
   color: #eb1761;
   font-weight: bold;
@@ -212,7 +222,7 @@ img {
   border: none;
   border-radius: 40px;
   padding: 12px 24px;
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'DM Sans', Arial, sans-serif;
   font-size: 14px;
   color: black;
   cursor: pointer;
@@ -1012,7 +1022,7 @@ textarea {
 }
 
 .pricing-tagline{
-    font-family:"IBM Plex Serif", serif;
+    font-family:"Cormorant Garamond", Georgia, serif;
     font-style:italic;
     font-size:1.5rem;
     color:#4A0983;
@@ -1138,7 +1148,7 @@ textarea {
 
 .pricing-script{
 
-    font-family:"IBM Plex Serif", serif;
+    font-family:"Cormorant Garamond", Georgia, serif;
 
     font-style:italic;
 
@@ -1409,7 +1419,7 @@ textarea {
 }
 
 .footer__logo img {
-  width: 150px;
+  width: 220px;
   height: auto;
 }
 
@@ -2046,4 +2056,379 @@ label[for="terms"] {
     font-weight: 500;
 }
 
+}
+
+/* Heading fonts matched to the supplied mockup. */
+h1, h2, h3, h4, .about-brand {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+/* Cursive lettering for the business name. */
+.brand-name, .about-brand {
+  font-family: 'Allura', 'Brush Script MT', cursive;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* White hero lettering over the pink video tint. */
+.hero .brand-name,
+.hero .tagline {
+  color: #fff;
+}
+
+/* Hero actions inspired by the client mockup. */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color .2s ease;
+}
+
+.hero-button-outline {
+  background: transparent;
+  border-color: #fff;
+}
+
+.hero-button-outline:hover {
+  background: rgba(255, 255, 255, .15);
+}
+
+.hero-button-pink {
+  background: #b94f76;
+  border-color: #b94f76;
+}
+
+.hero-button-pink:hover {
+  background: #a53d64;
+  border-color: #a53d64;
+}
+
+.hero-button:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+/* The hero uses the client's original logo artwork. */
+.hero .hero-brand {
+  width: min(480px, 100%);
+  line-height: 1;
+}
+
+.hero-brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 720px;
+}
+
+/* Homepage navigation stays over the video while scrolling. */
+.home-page .header {
+  position: fixed;
+  background: transparent;
+  box-shadow: none;
+  transition: background-color .2s ease, box-shadow .2s ease;
+}
+
+.home-page .header.is-scrolled {
+  background: #f2e8f7;
+  box-shadow: 0 3px 16px rgba(72, 32, 84, .12);
+}
+
+.home-page .header.is-scrolled .nav-link,
+.home-page .header.is-scrolled .social-icons i {
+  color: #482054;
+  text-shadow: none;
+}
+
+.home-page .header.is-scrolled .nav-link:focus-visible {
+  outline-color: #482054;
+}
+
+.home-page .header-top {
+  background: transparent;
+  border-bottom: 0;
+}
+
+.home-page .navigation {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.home-page .nav-link,
+.home-page .social-icons i {
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .35);
+}
+
+.home-page .nav-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.home-page .hero {
+  min-height: 540px;
+  height: auto;
+  padding-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .home-page .hero {
+    min-height: 500px;
+    padding-top: 110px;
+  }
+
+  .home-page .hamburger span {
+    background: #fff;
+  }
+
+  .home-page .navigation {
+    width: 100%;
+    background: rgba(72, 32, 84, .97);
+    border-top: 0;
+  }
+
+  .home-page .navigation .nav-link {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, .2);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page .header.is-scrolled .hamburger span {
+    background: #482054;
+  }
+
+  .home-page .header.is-scrolled .navigation .nav-link {
+    color: #fff;
+  }
+
+  .home-page .header.is-scrolled .navigation .nav-link:focus-visible {
+    outline-color: #fff;
+  }
+}
+
+/* Consistent purple header, with the hero still visible underneath. */
+.home-page .header {
+  background: rgba(242, 232, 247, .88);
+}
+
+.home-page .header.is-scrolled {
+  background: rgba(242, 232, 247, .96);
+}
+
+.home-page .header .nav-link,
+.home-page .header .social-icons i {
+  color: #482054;
+  text-shadow: none;
+}
+
+.home-page .header .nav-link:focus-visible {
+  outline-color: #482054;
+}
+
+@media (max-width: 768px) {
+  .home-page .header .hamburger span {
+    background: #482054;
+  }
+
+  .home-page .header .navigation .nav-link {
+    color: #fff;
+  }
+
+  .home-page .header .navigation .nav-link:focus-visible {
+    outline-color: #fff;
+  }
+}
+
+/* Uppercase navigation aligned to the right of the logo. */
+.header .nav-link {
+  text-transform: uppercase;
+}
+
+@media (min-width: 769px) {
+  .header .header-top {
+    grid-template-columns: auto 1fr;
+  }
+
+  .header .navigation {
+    justify-self: end;
+    justify-content: flex-end;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .header-top {
+    justify-content: flex-start;
+  }
+
+  .header .hamburger {
+    left: auto;
+    right: 16px;
+  }
+
+  .header .navigation {
+    text-align: right;
+  }
+}
+
+/* Baker introduction directly below the hero, following the mockup. */
+.about.about-profile {
+  padding: 80px 24px;
+  background: #fff;
+  text-align: left;
+  scroll-margin-top: 90px;
+}
+
+.about-profile-layout {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: .95fr 1.05fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.about-portrait {
+  position: relative;
+  margin: 0;
+}
+
+.about-portrait img {
+  display: block;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center 60%;
+  border-radius: 10px;
+}
+
+.about-portrait figcaption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background: #fff;
+  border-radius: 4px;
+  color: #482054;
+  font-family: 'Allura', cursive;
+  font-size: 28px;
+}
+
+.about-eyebrow {
+  font-family: 'Allura', cursive;
+  color: #a53d64;
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.about-profile-copy h2 {
+  font-size: clamp(32px, 3vw, 44px);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #302133;
+  margin-bottom: 24px;
+}
+
+.about-intro-card {
+  background: #fcf0f5;
+  padding: 20px 24px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  color: #654556;
+}
+
+.about-intro-card span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  color: #a53d64;
+}
+
+.about-intro-card p,
+.about-profile .about-text {
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.about-profile-link {
+  display: inline-block;
+  margin-top: 24px;
+  color: #a53d64;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.about-profile-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about.about-profile { padding: 48px 20px; }
+  .about-profile-layout { grid-template-columns: 1fr; gap: 32px; }
+  .about-portrait { width: 100%; max-width: 440px; margin: 0 auto; }
+  .about-portrait img { height: 420px; }
+}
+
+/* Four product categories, with alternating layouts and fading photos. */
+.baked-goods { background: #fbf7f8; scroll-margin-top: 90px; }
+.baked-goods-intro { padding: 64px 24px 32px; text-align: center; }
+.baked-goods-intro h2 { font-size: clamp(32px, 4vw, 46px); font-weight: 500; color: #482054; margin-bottom: 12px; }
+.baked-goods-intro p { color: #654556; font-size: 15px; line-height: 1.7; }
+.product-photo-toggle { margin-top: 14px; border: 0; background: transparent; color: #654556; font: inherit; font-size: 12px; text-decoration: underline; cursor: pointer; padding: 8px; }
+.product-row { padding: 48px 24px; }
+.product-row:nth-of-type(even) { background: #f2e8f7; }
+.product-row-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.product-row-reverse .product-photos { order: 2; }
+.product-row-reverse .product-copy { order: 1; }
+.product-photos { position: relative; width: 100%; height: 400px; overflow: hidden; border-radius: 10px; background: #eee4e9; }
+.product-photos img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+.product-photo-alternate { opacity: 0; animation: product-photo-fade 12s ease-in-out infinite; animation-delay: var(--photo-delay, 0s); }
+.product-number { color: #a53d64; font-size: 12px; letter-spacing: 2px; }
+.product-copy h3 { font-size: clamp(32px, 4vw, 46px); font-weight: 500; color: #482054; text-align: left; margin: 10px 0 20px; }
+.product-copy p { max-width: 400px; color: #654556; font-size: 16px; line-height: 1.8; }
+.photos-paused .product-photo-alternate { animation-play-state: paused; }
+@keyframes product-photo-fade { 0%, 40%, 100% { opacity: 0; } 50%, 90% { opacity: 1; } }
+@media (max-width: 768px) {
+  .product-row { padding: 32px 20px; }
+  .product-row-inner { grid-template-columns: 1fr; gap: 24px; }
+  .product-row-reverse .product-photos, .product-row-reverse .product-copy { order: initial; }
+  .product-photos { height: 340px; }
+  .baked-goods-intro { padding: 48px 20px 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .product-photo-alternate { animation: none; opacity: 0; }
+  .product-photo-toggle { display: none; }
 }

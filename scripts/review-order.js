@@ -165,7 +165,7 @@ function buildOrderPayload() {
 
 function openWhatsApp(orderNumber) {
 
-    let message = `Hello Felicia! I'd like to request a quote.\n\n`;
+    let message = `Hello Ndlovukazi's Baked Goodies! I'd like to request a quote.\n\n`;
     message += `*Order Number:* ${orderNumber}\n\n`;
 
     message += `*Customer Details*\n`;
