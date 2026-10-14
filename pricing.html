@@ -28,7 +28,7 @@
           content="index, follow">
 
     <link rel="canonical"
-          href="https://www.feliciabakes.co.za/pricing.html">
+          href="https://vinoliamoekwa.github.io/ndlovukazis-baked-goodies/pricing.html">
 
     <!-- Theme Colour -->
     <meta name="theme-color"
@@ -45,7 +45,7 @@
           content="View our menu and starting prices for custom cakes, cupcakes, mini treats and DIY cake kits.">
 
     <meta property="og:url"
-          content="https://www.feliciabakes.co.za/pricing.html">
+          content="https://vinoliamoekwa.github.io/ndlovukazis-baked-goodies/pricing.html">
 
     <meta property="og:image:alt"
           content="Ndlovukazi's Baked Goodies Menu and Custom Cakes">
@@ -98,7 +98,7 @@
 
 </head>
 
-    <body>
+    <body class="bakery-page">
     <header class="header">
   <div class="header-top">
     <div class="logo">
@@ -114,11 +114,11 @@
 
     </nav>
 
-  <div class="hamburger" id="hamburger" aria-label="Open menu">
+  <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
     <span></span>
     <span></span>
     <span></span>
-  </div>
+  </button>
 </div>
 </header>
 
@@ -403,31 +403,44 @@
 
 </main>
 
-<footer class="footer">
-    <div class="footer__logo">
-<!-- Logo image would go here -->
-<img src="images/ndlovukazis-baked-goodies-logo.png" alt="Ndlovukazi's Baked Goodies logo">
-</div> 
-<!-- Icons -->
- <div class="footer-icons">
-  <a href="https://www.instagram.com/felicia__bakes/" target="_blank">
-    <i class="fab fa-instagram"></i>
-  </a>
-
-  <a href="https://www.tiktok.com/@felicia.bakes" target="_blank">
-    <i class="fab fa-tiktok"></i>
-  </a>
-
-  <a href="https://wa.me/27813315267" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <a href="mailto:info@feliciabakes.co.za">
-        <i class="fa-solid fa-envelope"></i>
-    </a>
-</div>
-<p>&copy; 2026 Ndlovukazi's Baked Goodies. All rights reserved.</p>
-
+<footer class="footer bakery-footer">
+  <div class="bakery-footer-grid">
+    <div class="bakery-footer-brand">
+      <a class="bakery-footer-logo" href="index.html" aria-label="Ndlovukazi's Baked Goodies home">
+        <img src="images/ndlovukazis-baked-goodies-logo.png" alt="Ndlovukazi's Baked Goodies logo" loading="lazy">
+      </a>
+      <p>Cakes, cupcakes, cookies, scones and party packs.</p>
+      <p>Johannesburg</p>
+    </div>
+    <nav class="bakery-footer-links" aria-label="Footer navigation">
+      <h2>Explore</h2>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">Meet the baker</a>
+      <a href="index.html#baked-goods">Our Baked Goodies</a>
+      <a href="index.html#party-packs">Party Packs</a>
+      <a href="index.html#gallery">Gallery &amp; Pricing</a>
+    </nav>
+    <nav class="bakery-footer-links" aria-label="Footer products">
+      <h2>Our Goodies</h2>
+      <a href="index.html#product-cakes">Cakes</a>
+      <a href="index.html#product-cupcakes">Cupcakes</a>
+      <a href="index.html#product-cookies">Cookies</a>
+      <a href="index.html#product-scones">Scones</a>
+      <a href="index.html#party-packs">Party Packs</a>
+    </nav>
+    <div class="bakery-footer-order">
+      <h2>Orders &amp; Enquiries</h2>
+      <p>Tell us what you have in mind for your next celebration.</p>
+      <a class="bakery-footer-button" href="request-quote.html">Place an Order</a>
+      <a class="bakery-footer-track" href="tracking.html">Track your order</a>
+      <a class="bakery-footer-track" href="request-quote.html">Request a quote</a>
+      <a class="bakery-footer-track" href="index.html#gallery">Browse gallery &amp; pricing</a>
+    </div>
+  </div>
+  <div class="bakery-footer-bottom">
+    <p>&copy; 2026 Ndlovukazi's Baked Goodies. All rights reserved.</p>
+    <a href="index.html">Back to top &uarr;</a>
+  </div>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="scripts/slides.js"></script>

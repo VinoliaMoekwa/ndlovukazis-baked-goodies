@@ -51,7 +51,30 @@
 
 </head>
 
-<body>
+<body class="bakery-page">
+  <header class="header">
+  <div class="header-top">
+    <div class="logo">
+      <img src="images/ndlovukazis-baked-goodies-logo.png" alt="Ndlovukazi's Baked Goodies logo">
+    </div>
+
+    <nav class="navigation" id="mobileNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="request-quote.html" class="nav-link">Request Quote</a>
+      <a href="tracking.html" class="nav-link">Track Order</a>
+
+
+    </nav>
+
+  <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+</header>
+
   <main class="form-page">
     <section class="form-intro">
       <h2>Update Order Status</h2>
@@ -82,6 +105,47 @@
     </section>
   </main>
 
+<footer class="footer bakery-footer">
+  <div class="bakery-footer-grid">
+    <div class="bakery-footer-brand">
+      <a class="bakery-footer-logo" href="index.html" aria-label="Ndlovukazi's Baked Goodies home">
+        <img src="images/ndlovukazis-baked-goodies-logo.png" alt="Ndlovukazi's Baked Goodies logo" loading="lazy">
+      </a>
+      <p>Cakes, cupcakes, cookies, scones and party packs.</p>
+      <p>Johannesburg</p>
+    </div>
+    <nav class="bakery-footer-links" aria-label="Footer navigation">
+      <h2>Explore</h2>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">Meet the baker</a>
+      <a href="index.html#baked-goods">Our Baked Goodies</a>
+      <a href="index.html#party-packs">Party Packs</a>
+      <a href="index.html#gallery">Gallery &amp; Pricing</a>
+    </nav>
+    <nav class="bakery-footer-links" aria-label="Footer products">
+      <h2>Our Goodies</h2>
+      <a href="index.html#product-cakes">Cakes</a>
+      <a href="index.html#product-cupcakes">Cupcakes</a>
+      <a href="index.html#product-cookies">Cookies</a>
+      <a href="index.html#product-scones">Scones</a>
+      <a href="index.html#party-packs">Party Packs</a>
+    </nav>
+    <div class="bakery-footer-order">
+      <h2>Orders &amp; Enquiries</h2>
+      <p>Tell us what you have in mind for your next celebration.</p>
+      <a class="bakery-footer-button" href="request-quote.html">Place an Order</a>
+      <a class="bakery-footer-track" href="tracking.html">Track your order</a>
+      <a class="bakery-footer-track" href="request-quote.html">Request a quote</a>
+      <a class="bakery-footer-track" href="index.html#gallery">Browse gallery &amp; pricing</a>
+    </div>
+  </div>
+  <div class="bakery-footer-bottom">
+    <p>&copy; 2026 Ndlovukazi's Baked Goodies. All rights reserved.</p>
+    <a href="index.html">Back to top &uarr;</a>
+  </div>
+</footer>
+
   <script src="scripts/update-status.js"></script>
+  <script src="scripts/hamburger.js"></script>
 </body>
 </html>

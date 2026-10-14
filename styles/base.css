@@ -2646,3 +2646,30 @@ input, select, textarea, button {
   .bakery-footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
   .bakery-footer-brand, .bakery-footer-order { grid-column: 1 / -1; }
 }
+
+/* Shared navigation across every bakery website page. */
+.bakery-page { padding-top: 80px; }
+.bakery-page.home-page { padding-top: 0; }
+.bakery-page .header {
+  position: fixed;
+  background: rgba(242, 232, 247, .96);
+  box-shadow: 0 3px 16px rgba(72, 32, 84, .12);
+}
+.bakery-page.home-page .header { background: rgba(242, 232, 247, .88); box-shadow: none; }
+.bakery-page.home-page .header.is-scrolled { background: rgba(242, 232, 247, .96); box-shadow: 0 3px 16px rgba(72, 32, 84, .12); }
+.bakery-page .header-top { background: transparent; border-bottom: 0; }
+.bakery-page .navigation { background: transparent; box-shadow: none; border-radius: 0; }
+.bakery-page .header .nav-link { color: #482054; text-shadow: none; text-transform: uppercase; }
+.bakery-page .header .nav-link:focus-visible { outline: 2px solid #482054; outline-offset: 4px; }
+.bakery-page .hamburger { border: 0; padding: 0; background: transparent; }
+.bakery-page .hamburger span { background: #482054; }
+@media (min-width: 769px) and (max-width: 1024px) { .bakery-page { padding-top: 76px; } .bakery-page.home-page { padding-top: 0; } }
+@media (max-width: 768px) {
+  .bakery-page { padding-top: 72px; }
+  .bakery-page.home-page { padding-top: 0; }
+  .bakery-page .header-top { min-height: 72px; }
+  .bakery-page .header .navigation { top: 72px; width: 100%; background: rgba(72, 32, 84, .97); border-top: 0; }
+  .bakery-page .header .navigation .nav-link { color: #fff; border-bottom-color: rgba(255, 255, 255, .2); }
+  .bakery-page .header .navigation .nav-link:focus-visible { outline-color: #fff; }
+  .bakery-page .header .hamburger { top: 24px; }
+}

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.feliciabakes.co.za/sitemap.xml
+Sitemap: https://vinoliamoekwa.github.io/ndlovukazis-baked-goodies/sitemap.xml
